@@ -1,0 +1,101 @@
+body {
+    background: rgb(0, 0, 0);
+    background-size:contain;
+    height: 100vh;
+    padding:0;
+    margin:0;
+}
+
+audio {
+    display: none;
+}
+
+.loader-page {
+    padding:0;
+    margin:0;
+    background: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+}
+
+.text-box {
+    font-family: Arial, Helvetica, sans-serif;
+    color: seashell;
+    width: 100%;
+    bottom: 0px;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.name-box {
+    border: rgb(104,157,246) solid 5px;
+    border-bottom: none;
+    border-left: none;
+    padding: 10px 20px;
+    height: 27px;
+    flex-basis: 10%;
+}
+
+.dialog-box {
+    border-top: rgb(104,157,246) solid 5px;
+    background: rgba(38, 39, 46, 0.5);
+    padding: 10px 30px;
+    height: 20vh;
+    font-size: 14px;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    flex-basis: 100%;
+}
+
+span.naming {
+    font-size: 1.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+p#scriptText {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.art-bg {
+    top: 0;
+    left: 0;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background: rgb(0, 0, 0);
+    z-index: -1;
+}
+
+.button-option {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button-option button {
+    width: 20%;
+    margin:10px 0px;
+    font-size: 22px;
+    background: #073a65;
+    color: white;
+    border-color: white;
+    transition: all 0.2s linear;
+}
