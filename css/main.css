@@ -1,22 +1,74 @@
-body {
-    padding:0;
-    margin:0;
-    font-family: Arial, Helvetica, sans-serif;
+@font-face {
+    font-family: "TheSeasons";
+    src: url("font/the-seasons/The Seasons Light.ttf") format("opentype");
 }
 
-a.main-button, button.main-button {
-    font-size: 22px;
-    background: rgba(17,114,196, 0.3);
-    color: white;
-    border-color: white;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+    background: white;
+    font-family: "TheSeasons, cursive";
+}
+
+.flower-container {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+    background: #808080;
     z-index: 3;
 }
 
-audio {
-    display: none;
+.content-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+    z-index: 2;
 }
 
-a {
-    text-decoration: none;
+.border {
+    position: absolute;
+    z-index: 0;
+    width: 30%;
+    height: auto;
+}
+
+.border-left {
+    left: 0;
+    top: 0;
+}
+
+.border-right {
+    right: 0;
+    bottom: 0;
+}
+
+.container-header {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    text-align: center;
+    flex-direction: column;
+}
+
+.header-save {
+    font-family: "TheSeasons";
+    font-size: 2vh;
+    text-transform: capitalize;
+}
+
+.header-wed {
+    font-family: "TheSeasons";
+    font-size: 2vh;
+    text-transform: capitalize;
 }
