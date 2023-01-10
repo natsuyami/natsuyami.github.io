@@ -71,30 +71,79 @@ body {
     align-items: stretch;
     text-align: center;
     flex-direction: column;
+    z-index: 1;
 }
 
 .header-save {
     font-family: "TheSeasons";
     font-size: 3vh;
     text-transform: capitalize;
+    padding: 10px 5px;
 }
 
 .header-wed {
     font-family: "Callem";
     font-size: 10vh;
     text-transform: capitalize;
-    padding: 20px 0px;
+    padding: 10px 5px;
 }
 
 .header-date, .header-venue, .header-address {
     font-family: "OpenSans";
     font-size: 3vh;
     text-transform: capitalize;
+    padding: 2px 5px;
 }
 
 .button-rsvp {
     font-family: "AnonymousPro";
     font-size: 4vh;
     text-transform: capitalize;
-    padding: 30px 0px;
+    padding: 20px 5px;
+}
+
+#transparent {
+	background: gray;
+	border: 3px solid gray;
+	color: gray;
+    font-size: 4vh;
+    color: white;
+    padding: 10px 25px;
+	transition: border 300ms ease, transform 800ms ease;
+	border-radius: 50px;
+}
+
+#transparent:hover {
+	transform: scale(1.05);
+	border-color: gray transparent;
+}
+
+#transparent:active {
+	transform: scale(0.9);
+}
+
+@media (orientation: portrait) {
+    .border {
+        position: absolute;
+        z-index: 0;
+        width: 50%;
+        height: auto;
+    }
+
+    .header-save, .header-date, .header-venue, .header-address { 
+        font-size: 2.5vh;
+
+    }
+
+    .header-wed {
+        font-size: 8vh;
+    }
+
+    .button-rsvp {
+        font-size: 3vh;
+    }
+
+    #transparent {
+        font-size: 3vh;
+    }
 }
