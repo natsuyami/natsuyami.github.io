@@ -79,6 +79,8 @@ body {
     font-size: 3vh;
     text-transform: capitalize;
     padding: 10px 5px;
+    display:none;
+    font-weight: 600;
 }
 
 .header-wed {
@@ -86,6 +88,7 @@ body {
     font-size: 10vh;
     text-transform: capitalize;
     padding: 10px 5px;
+    display:none;
 }
 
 .header-date, .header-venue, .header-address {
@@ -93,6 +96,7 @@ body {
     font-size: 3vh;
     text-transform: capitalize;
     padding: 2px 5px;
+    display:none;
 }
 
 .button-rsvp {
@@ -100,6 +104,7 @@ body {
     font-size: 4vh;
     text-transform: capitalize;
     padding: 20px 5px;
+    display:none;
 }
 
 #transparent {
@@ -120,6 +125,15 @@ body {
 
 #transparent:active {
 	transform: scale(0.9);
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-family: Arial;
+    font-size: 2vh;
+    z-index: 2;
 }
 
 @media (orientation: portrait) {
@@ -145,5 +159,15 @@ body {
 
     #transparent {
         font-size: 3vh;
+    }
+
+    footer {
+        width: 48%;
+    }
+
+    span.copyright {
+        display: block;
+        padding-top: 5px;
+        width: 100%;
     }
 }
